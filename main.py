@@ -1,3 +1,19 @@
+# =============================================================================
+# Project: Web Content Integrity Auditor (WCIA)
+#
+# Original Author: Jânio Ribeiro
+# Role: Senior Data QA Engineer & Data Engineer
+#
+# Copyright (c) 2026 Jânio Ribeiro
+#
+# SPDX-License-Identifier: MIT
+#
+# Description:
+# An asynchronous framework for website discovery,
+# content integrity validation, and audit reconciliation.
+#
+# Originally designed and developed by Jânio Ribeiro.
+# =============================================================================
 from __future__ import annotations
 
 import argparse
@@ -10,6 +26,7 @@ from config import CONFIG
 from crawler import run_audit, run_discovery
 from report import build_excel_report
 from utils import read_json, write_json
+from banner import print_banner
 
 
 def parse_args() -> argparse.Namespace:
@@ -42,6 +59,7 @@ def load_urls_from_file(path: Path) -> list[str]:
 
 
 async def async_main() -> None:
+    print_banner()
     args = parse_args()
     CONFIG.low_content_threshold = max(1, args.threshold)
     CONFIG.discovery_max_pages = max(1, args.max_pages)

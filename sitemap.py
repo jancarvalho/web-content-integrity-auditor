@@ -1,3 +1,19 @@
+# =============================================================================
+# Project: Web Content Integrity Auditor (WCIA)
+#
+# Original Author: Jânio Ribeiro
+# Role: Senior Data QA Engineer & Data Engineer
+#
+# Copyright (c) 2026 Jânio Ribeiro
+#
+# SPDX-License-Identifier: MIT
+#
+# Description:
+# An asynchronous framework for website discovery,
+# content integrity validation, and audit reconciliation.
+#
+# Originally designed and developed by Jânio Ribeiro.
+# =============================================================================
 from __future__ import annotations
 
 import re

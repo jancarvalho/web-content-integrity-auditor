@@ -1,4 +1,41 @@
 # Web Content Integrity Auditor (WCIA)
+Discover. Validate. Reconcile.
+An open-source, asynchronous web crawling and content integrity auditing framework designed to identify content quality issues, improve URL discovery coverage, and ensure consistency across discovery, auditing, and reporting processes.
+
+## About the Author
+### Jânio Ribeiro
+
+Founder, Creator & Original Author of Web Content Integrity Auditor (WCIA).
+
+Senior Data QA Engineer & Data Engineer with professional experience in information technology since 2007, specializing in software engineering, data quality, data engineering, test automation, and enterprise data platforms.
+
+## Areas of Expertise
+ - Data Quality Engineering
+ - Data Engineering
+ - Software Engineering
+ - Test Automation
+ - Data Integrity and Reconciliation
+ - ETL and Data Pipeline Validation
+ - Cloud Data Platforms
+ - Database Engineering
+ - Enterprise Automation
+
+## Project Background
+The Web Content Integrity Auditor was originally designed and developed by Jânio Ribeiro, inspired by real-world engineering challenges involving automated website discovery, dynamic content extraction, content quality validation, and end-to-end audit coverage.
+
+The project aims to provide a reusable, platform-independent solution that can be applied across different industries and website architectures.
+
+## Original Authorship
+WCIA was originally created by Jânio Ribeiro in 2026.
+
+Contributions, improvements, and extensions from the open-source community are welcome under the terms of the MIT License.
+
+## Copyright and License
+Copyright © 2026 Jânio Ribeiro.
+
+This project is distributed under the MIT License. See the LICENSE file for details.
+
+# Web Content Integrity Auditor (WCIA)
 
 A generic Python/Playwright website discovery and content audit utility adapted from an earlier crawler. It discovers internal links, optionally expands common load-more buttons, generates intermediate path candidates, audits pages, and writes Excel and JSON outputs.
 
