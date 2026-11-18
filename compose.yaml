@@ -1,0 +1,26 @@
+services:
+  fixture:
+    image: python:3.12-slim
+    working_dir: /site
+    volumes:
+      - ./fixture:/site:ro
+    command: ["python", "server.py"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/section')"]
+      interval: 2s
+      timeout: 2s
+      retries: 15
+  auditor:
+    build: .
+    depends_on:
+      fixture:
+        condition: service_healthy
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      START_URL: ${START_URL:-http://fixture:8080/section}
+    volumes:
+      - ./output:/app/output
+    init: true
+    shm_size: 512mb

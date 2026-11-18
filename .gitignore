@@ -1,0 +1,42 @@
+#Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Generated reports
+output/
+reports/
+screenshots/
+logs/
+*.log
+
+#IDE
+.vscode/
+.idea/
+
+# Operating systemns
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.zip
